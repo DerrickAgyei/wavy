@@ -1,5 +1,5 @@
 name: wavy
-description: WAVY - WAY-vee
+description: WAVY - Music & Video App
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,13 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.16.0
-  google_sign_in: ^6.1.1
+  cupertino_icons: ^1.0.2
   video_player: ^2.9.2
-  image_picker: ^1.1.2
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
   flutter_lints: ^3.0.0
 
 flutter:
