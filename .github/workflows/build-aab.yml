@@ -12,6 +12,13 @@ jobs:
         with:
           flutter-version: '3.22.0'
           channel: 'stable'
+      - name: Scaffold Android project
+        run: |
+          mv lib/main.dart main.dart.tmp
+          mv pubspec.yaml pubspec.yaml.tmp
+          flutter create . --org com.wavy.app --project-name wavy
+          mv pubspec.yaml.tmp pubspec.yaml
+          mv main.dart.tmp lib/main.dart
       - run: flutter pub get
       - run: flutter build appbundle --release
       - uses: actions/upload-artifact@v4
